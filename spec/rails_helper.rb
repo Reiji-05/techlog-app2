@@ -73,5 +73,6 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
 
   config.include Devise::Test::IntegrationHelpers, type: :system
+  config.include Devise::Test::IntegrationHelpers, type: :request
   # sign_in, sign_out メソッドを使用可能にする
 end
