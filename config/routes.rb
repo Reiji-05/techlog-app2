@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'home#top'
 
   resources :posts, only: [:index, :show, :new, :create, :destroy]
+  resources :users, only: [:show]
 end
